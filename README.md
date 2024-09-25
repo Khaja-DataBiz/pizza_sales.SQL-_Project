@@ -20,7 +20,8 @@ A pizza chain’s operational data is spread across multiple tables: orders, ord
 
 Creating the Core Tables
 
-CREATE DATABASE pizzahut;
+create database pizzahut;
+
 > Purpose: To create a dedicated database for analysis. This ensures data is well-organized and can be queried efficiently.
 
 # Orders Table
