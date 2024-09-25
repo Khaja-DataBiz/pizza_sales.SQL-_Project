@@ -61,6 +61,7 @@ FROM orders;
 ```
 
 Purpose: Knowing how many orders are placed is the first step in understanding sales activity.
+
 Output: Provides an overview of the total order volume—helpful for measuring business growth or comparing performance across different periods.
 
 # Total Revenue from Pizza Sales
@@ -74,6 +75,7 @@ JOIN pizzas ON pizzas.pizza_id = orders_details.pizza_id;
 ```
 
 Purpose: This query calculates total sales revenue, which is essential for assessing the business's financial health.
+
 Real-World Impact: Pizza chains can use this information to forecast earnings and assess the effectiveness of marketing campaigns or discounts.
 
 # Highest Priced Pizza
@@ -86,6 +88,7 @@ ORDER BY pizzas.price DESC
 LIMIT 1;
 ```
 Purpose: Knowing the highest-priced item on the menu can influence pricing strategy.
+
 Business Use: This insight helps the pizza chain decide if the most expensive item is marketed effectively or if adjustments need to be made to improve sales of premium items.
 
 3. Customer Preferences and Insights
@@ -101,6 +104,7 @@ ORDER BY order_count DESC;
 ```
 
 Purpose: Analyzing the most popular pizza size helps optimize inventory management and production planning.
+
 Insight: Knowing which size is ordered the most lets the business focus on stocking the right ingredients and adjusting menu promotions.
 
 # Top 5 Most Ordered Pizza Types
@@ -116,6 +120,7 @@ LIMIT 5;
 ```
 
 Purpose: This query identifies the top 5 most ordered pizza types, offering insight into customer preferences.
+
 Business Use: Knowing the best-selling pizzas allows the business to spotlight these items in marketing campaigns or bundle deals.
 
 4. Timing and Distribution
@@ -129,6 +134,7 @@ GROUP BY HOUR(order_time);
 ```
 
 Purpose: Understanding peak order times helps businesses allocate staff efficiently and plan inventory for high-demand periods.
+
 Insight: Identifying peak hours allows pizzerias to run special deals or discounts to drive sales during slower periods.
 
 # Pizza Category Distribution
@@ -140,6 +146,7 @@ GROUP BY category;
 ```
 
 Purpose: This query provides insight into how different categories (vegetarian, meat-based, etc.) perform.
+
 Real-World Impact: It helps balance the menu by focusing on categories that bring in the most revenue and identifying underperforming items.
 
 5. Advanced Performance Metrics
@@ -157,6 +164,7 @@ LIMIT 3;
 ```
 
 Purpose: This identifies the top 3 revenue-generating pizzas, allowing the business to focus on promoting its highest earners.
+
 Insight: By focusing on these pizzas, the chain can increase revenue through targeted promotions or meal deals featuring these popular items.
 
 # Percentage Contribution of Pizza Types to Total Revenue
@@ -174,6 +182,7 @@ ORDER BY revenue_percentage DESC;
 ```
 
 Purpose: This query calculates the percentage each pizza category contributes to total sales.
+
 Insight: This helps the chain focus its marketing efforts on the highest revenue-generating categories.
 
 6. Cumulative and Category Insights
@@ -191,6 +200,7 @@ FROM
 ```
 
 Purpose: Tracks total revenue growth over time, helping businesses understand how sales evolve.
+
 Real-World Impact: The pizza chain can use this data to monitor the effectiveness of new marketing strategies or product launches.
 
 # 
@@ -211,6 +221,7 @@ WHERE rn <= 3;
 ```
 
 Purpose: This query ranks the top 3 pizzas by revenue for each category, helping the business understand which items are the top performers in their respective categories.
+
 Insight: By knowing which pizzas are top-sellers within each category, the chain can adjust its menu to meet customer demand and increase revenue.
 
 
